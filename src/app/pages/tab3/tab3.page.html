@@ -1,0 +1,29 @@
+<ion-header [translucent]="true"  class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button  defaultHref="/tabs/tab2"></ion-back-button>
+  </ion-buttons>
+    <ion-title>
+    detalles de elemento
+    </ion-title>
+     
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" *ngIf="estado">
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>id:{{data.id}}</ion-card-subtitle>
+      <ion-card-title>titulo:{{data.title}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      
+      <p>
+      {{data.body}}
+    </p>
+    </ion-card-content>
+  </ion-card>
+ 
+</ion-content>

@@ -1,0 +1,20 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar color="dark">
+    <ion-title>
+      Listado de elementos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+  <ion-list>
+    <ion-item  detail *ngFor="let item of items">
+      <ion-label (click)="datos(item.id)">{{item.title}}</ion-label>
+    </ion-item>
+  </ion-list>
+  
+
+
+</ion-content>
