@@ -1,5 +1,5 @@
-<ion-header [translucent]="true"  class="ion-no-border">
-  <ion-toolbar>
+<ion-header [translucent]="true"  class="ion-no-border" >
+  <ion-toolbar color="dark">
     <ion-buttons slot="start">
       <ion-back-button  defaultHref="/tabs/tab2"></ion-back-button>
   </ion-buttons>
@@ -10,7 +10,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" *ngIf="estado">
+<ion-content [fullscreen]="true" *ngIf="estado" color="dark">
 
   <ion-card>
     <ion-card-header>
@@ -20,7 +20,7 @@
   
     <ion-card-content>
       
-      <p>
+      <p class="texto">
       {{data.body}}
     </p>
     </ion-card-content>

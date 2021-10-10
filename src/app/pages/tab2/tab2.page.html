@@ -6,15 +6,15 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" color="dark">
 
 
-  <ion-list>
-    <ion-item  detail *ngFor="let item of items">
+  <ion-list color="dark">
+    <ion-item  detail *ngFor="let item of items" color="dark">
       <ion-label (click)="datos(item.id)">{{item.title}}</ion-label>
     </ion-item>
   </ion-list>
-  
 
+  
 
 </ion-content>
